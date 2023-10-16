@@ -11,7 +11,7 @@ export const useCitiesStore = defineStore('cities', {
     //   - currentTemperature: current temperature (in degrees F)
     //   - dailyHigh: high temperature (in degrees F) for today
     //   - dailyLow: low temperature (in degrees F) for today
-    //weatherData: []
+    weatherDataCauseError: []
   }),
   
   // getters return data from the data store
