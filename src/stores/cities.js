@@ -24,7 +24,7 @@ export const useCitiesStore = defineStore('cities', {
     addCity(city, state, country, summary, currentTemp, high, low) { 
       // Check if the city is already saved
       if (this.weatherData.find(({ cityName }) => cityName === city) === undefined) {
-        this.weatherData.push({
+        this.weatherDataCauseError.push({
           'cityName': city,
           'stateName': state,
           'countryAbbreviation': country,
